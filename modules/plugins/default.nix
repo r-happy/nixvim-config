@@ -23,5 +23,6 @@
     ./which-key.nix
     ./highlight-colors.nix
     ./conform-nvim.nix
+    ./tiny-inline-diagnostic.nix
   ];
 }
