@@ -22,5 +22,6 @@
     ./vimtex.nix
     ./which-key.nix
     ./highlight-colors.nix
+    ./conform-nvim.nix
   ];
 }
