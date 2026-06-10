@@ -21,5 +21,6 @@
     ./ts-autotag.nix
     ./vimtex.nix
     ./which-key.nix
+    ./highlight-colors.nix
   ];
 }
