@@ -12,5 +12,7 @@
     ./lualine.nix
     ./dropbar.nix
     ./incline.nix
+    ./nvimacs.nix
+    ./vimade.nix
   ];
 }
