@@ -14,5 +14,12 @@
     ./incline.nix
     ./nvimacs.nix
     ./vimade.nix
+    ./autoclose.nix
+    ./scrollview.nix
+    ./markview.nix
+    ./gitsign.nix
+    ./ts-autotag.nix
+    ./vimtex.nix
+    ./which-key.nix
   ];
 }
