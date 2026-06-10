@@ -11,7 +11,11 @@
       lua_ls.enable = true;
       nil_ls.enable = true;
       ruff.enable = true;
-      rust_analyzer.enable = true;
+      rust_analyzer = {
+        enable = true;
+        installCargo = false;
+        installRustc = false;
+      };
       sqls.enable = true;
       ts_ls.enable = true;
     };
