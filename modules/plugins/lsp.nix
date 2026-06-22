@@ -17,6 +17,7 @@
         installRustc = false;
       };
       sqls.enable = true;
+      tailwindcss.enable = true;
       ts_ls.enable = true;
     };
   };
