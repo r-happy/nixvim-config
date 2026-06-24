@@ -19,6 +19,7 @@
         jsonc = [ "prettier" ];
         markdown = [ "prettier" ];
         scss = [ "prettier" ];
+        tex = [ "latexindent" ];
         typescript = [ "prettier" ];
         typescriptreact = [ "prettier" ];
         tsx = [ "prettier" ];
