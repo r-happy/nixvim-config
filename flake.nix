@@ -4,10 +4,19 @@
   inputs = {
     nixvim.url = "github:nix-community/nixvim";
     nixpkgs.follows = "nixvim/nixpkgs";
+    tawnyNvim = {
+      url = "github:r-happy/tawny.nvim";
+      flake = false;
+    };
   };
 
   outputs =
-    { nixpkgs, nixvim, ... }:
+    {
+      nixpkgs,
+      nixvim,
+      tawnyNvim,
+      ...
+    }:
     let
       systems = [
         "x86_64-linux"
@@ -23,6 +32,11 @@
         nixvim.lib.evalNixvim {
           inherit system;
           modules = [
+            {
+              _module.args = {
+                inherit tawnyNvim;
+              };
+            }
             ./nixvim.nix
           ];
         };

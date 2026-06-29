@@ -63,7 +63,8 @@
           "nixvim",
           "nixpkgs"
         ],
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "tawnyNvim": "tawnyNvim"
       }
     },
     "systems": {
@@ -79,6 +80,22 @@
         "owner": "nix-systems",
         "ref": "future-26.11",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "tawnyNvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1782736838,
+        "narHash": "sha256-tV0Ubj6yZaK8Khgd2c183I2qapp9hY/uCalad14jwq0=",
+        "owner": "r-happy",
+        "repo": "tawny.nvim",
+        "rev": "1186a35ff46919bbaab1fd784e847417fec17007",
+        "type": "github"
+      },
+      "original": {
+        "owner": "r-happy",
+        "repo": "tawny.nvim",
         "type": "github"
       }
     }
