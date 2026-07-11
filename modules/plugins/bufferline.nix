@@ -16,5 +16,11 @@
       action = "<cmd>BufferLineCyclePrev<cr>";
       options.desc = "Previous buffer";
     }
+    {
+      mode = "n";
+      key = "<C-b>q";
+      action = "<cmd>bdelete<cr>";
+      options.desc = "Close buffer";
+    }
   ];
 }
