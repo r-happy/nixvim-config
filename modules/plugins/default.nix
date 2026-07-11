@@ -10,6 +10,7 @@
     ./noice.nix
     ./treesitter.nix
     ./lualine.nix
+    ./bufferline.nix
     ./dropbar.nix
     ./incline.nix
     ./nvimacs.nix
