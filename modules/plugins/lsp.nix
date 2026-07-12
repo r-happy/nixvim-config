@@ -22,4 +22,7 @@
       ts_ls.enable = true;
     };
   };
+
+  # Keep diagnostics in bufferline and tiny-inline-diagnostic, not in the sign column.
+  diagnostic.settings.signs = false;
 }

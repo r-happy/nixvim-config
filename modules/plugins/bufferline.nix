@@ -1,6 +1,11 @@
 {
   plugins.bufferline = {
     enable = true;
+    settings.options = {
+      # Show per-buffer diagnostic counts reported by Neovim's built-in LSP.
+      diagnostics = "nvim_lsp";
+      separator_style = "slant";
+    };
   };
 
   keymaps = [

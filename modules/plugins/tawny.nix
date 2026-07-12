@@ -13,7 +13,7 @@
     require("tawny").setup({
       bold = true,
       variant = "dark",
-      transparent = true,
+      transparent = false,
     })
 
     vim.cmd.colorscheme("tawny")
