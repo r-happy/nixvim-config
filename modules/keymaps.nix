@@ -16,6 +16,13 @@ in
 
     {
       mode = "n";
+      key = "<leader>m";
+      action = "<cmd>Markview toggle<cr>";
+      options.desc = "Toggle Markdown view";
+    }
+
+    {
+      mode = "n";
       key = "sf";
       action = raw "function() Snacks.picker.files() end";
       options.desc = "picker file";
