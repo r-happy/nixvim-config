@@ -1,7 +1,7 @@
 {
   plugins.lsp = {
     enable = true;
-    inlayHints = true;
+    inlayHints = false;
 
     servers = {
       basedpyright.enable = true;
