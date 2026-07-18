@@ -2,7 +2,7 @@
 
 {
   plugins.dropbar = {
-    enable = false;
+    enable = true;
   };
 
   extraPlugins = [
