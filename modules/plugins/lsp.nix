@@ -4,6 +4,7 @@
     inlayHints = false;
 
     servers = {
+      angularls.enable = true;
       basedpyright.enable = true;
       clangd.enable = true;
       gopls.enable = true;
