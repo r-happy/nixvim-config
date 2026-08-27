@@ -8,6 +8,10 @@
           "vim.lsp.util.convert_input_to_markdown_lines" = true;
           "vim.lsp.util.stylize_markdown" = true;
         };
+
+        # Blink renders completion documentation; suppress Noice's separate
+        # signature popup so the two windows do not overlap.
+        signature.enabled = false;
       };
 
       cmdline = {
