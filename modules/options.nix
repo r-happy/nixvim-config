@@ -1,6 +1,6 @@
 {
   opts = {
-    cursorcolumn = true;
+    cursorcolumn = false;
     cursorline = true;
     smarttab = true;
     tabstop = 2;

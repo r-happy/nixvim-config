@@ -5,6 +5,8 @@
       # Show per-buffer diagnostic counts reported by Neovim's built-in LSP.
       diagnostics = "nvim_lsp";
       separator_style = "slant";
+      # A single buffer already has its filename in the statusline.
+      always_show_bufferline = false;
     };
   };
 
