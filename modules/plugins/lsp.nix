@@ -24,6 +24,10 @@
     };
   };
 
-  # Keep diagnostics in bufferline and tiny-inline-diagnostic, not in the sign column.
-  diagnostic.settings.signs = false;
+  # Tiny Inline Diagnostic owns inline messages; Bufferline keeps the counts.
+  diagnostic.settings = {
+    signs = false;
+    virtual_text = false;
+    virtual_lines = false;
+  };
 }
