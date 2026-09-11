@@ -1,7 +1,7 @@
 {
   plugins.conform-nvim = {
     enable = true;
-    autoInstall.enable = true;
+    autoInstall.enable = false;
 
     settings = {
       notify_on_error = true;

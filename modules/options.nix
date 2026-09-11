@@ -29,5 +29,8 @@
     autowriteall = true;
     swapfile = false;
     showcmd = true;
+    fillchars = {
+      eob = " ";
+    };
   };
 }
