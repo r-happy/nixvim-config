@@ -33,7 +33,7 @@ in
         "n"
         "t"
       ];
-      key = "<leader>tn";
+      key = "<leader>tc";
       action = "<cmd>TermNew<cr>";
       options.desc = "Terminal: New";
     }
@@ -53,9 +53,9 @@ in
         "n"
         "t"
       ];
-      key = "<leader>t[";
-      action = "<cmd>TermPrev<cr>";
-      options.desc = "Terminal: Previous";
+      key = "<leader>tn";
+      action = "<cmd>TermNext<cr>";
+      options.desc = "Terminal: Next";
     }
 
     {
@@ -63,9 +63,9 @@ in
         "n"
         "t"
       ];
-      key = "<leader>t]";
-      action = "<cmd>TermNext<cr>";
-      options.desc = "Terminal: Next";
+      key = "<leader>tp";
+      action = "<cmd>TermPrev<cr>";
+      options.desc = "Terminal: Previous";
     }
 
     {
