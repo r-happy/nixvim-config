@@ -23,6 +23,53 @@ in
 
     {
       mode = "n";
+      key = "<leader>j";
+      action = "<cmd>TSJToggle<cr>";
+      options.desc = "Toggle syntax node split/join";
+    }
+
+    {
+      mode = [
+        "n"
+        "t"
+      ];
+      key = "<leader>tn";
+      action = "<cmd>TermNew<cr>";
+      options.desc = "Terminal: New";
+    }
+
+    {
+      mode = [
+        "n"
+        "t"
+      ];
+      key = "<leader>tx";
+      action = "<cmd>TermClose<cr>";
+      options.desc = "Terminal: Close Current";
+    }
+
+    {
+      mode = [
+        "n"
+        "t"
+      ];
+      key = "<leader>t[";
+      action = "<cmd>TermPrev<cr>";
+      options.desc = "Terminal: Previous";
+    }
+
+    {
+      mode = [
+        "n"
+        "t"
+      ];
+      key = "<leader>t]";
+      action = "<cmd>TermNext<cr>";
+      options.desc = "Terminal: Next";
+    }
+
+    {
+      mode = "n";
       key = "sf";
       action = raw "function() Snacks.picker.files() end";
       options.desc = "picker file";
@@ -132,14 +179,8 @@ in
         "t"
       ];
       key = "<C-\\>";
-      action = raw ''
-        function()
-          Snacks.terminal.toggle(nil, {
-            win = { position = "bottom" },
-          })
-        end
-      '';
-      options.desc = "Snacks: Toggle Main Terminal";
+      action = "<cmd>TermToggle<cr>";
+      options.desc = "Terminal: Toggle";
     }
 
     {
@@ -148,14 +189,8 @@ in
         "t"
       ];
       key = "<C-¥>";
-      action = raw ''
-        function()
-          Snacks.terminal.toggle(nil, {
-            win = { position = "bottom" },
-          })
-        end
-      '';
-      options.desc = "Snacks: Toggle Main Terminal";
+      action = "<cmd>TermToggle<cr>";
+      options.desc = "Terminal: Toggle";
     }
 
     {
@@ -164,14 +199,8 @@ in
         "t"
       ];
       key = "<C-@>";
-      action = raw ''
-        function()
-          Snacks.terminal.toggle(nil, {
-            win = { position = "bottom" },
-          })
-        end
-      '';
-      options.desc = "Snacks: Toggle Main Terminal";
+      action = "<cmd>TermToggle<cr>";
+      options.desc = "Terminal: Toggle";
     }
 
     {
@@ -180,14 +209,8 @@ in
         "t"
       ];
       key = "<Nul>";
-      action = raw ''
-        function()
-          Snacks.terminal.toggle(nil, {
-            win = { position = "bottom" },
-          })
-        end
-      '';
-      options.desc = "Snacks: Toggle Main Terminal";
+      action = "<cmd>TermToggle<cr>";
+      options.desc = "Terminal: Toggle";
     }
   ];
 }

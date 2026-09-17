@@ -8,6 +8,10 @@
       url = "github:r-happy/tawny.nvim";
       flake = false;
     };
+    terminalsNvim = {
+      url = "github:vapourismo/terminals.nvim";
+      flake = false;
+    };
   };
 
   outputs =
@@ -15,6 +19,7 @@
       nixpkgs,
       nixvim,
       tawnyNvim,
+      terminalsNvim,
       ...
     }:
     let
@@ -34,7 +39,7 @@
           modules = [
             {
               _module.args = {
-                inherit tawnyNvim;
+                inherit tawnyNvim terminalsNvim;
               };
             }
             ./nixvim.nix

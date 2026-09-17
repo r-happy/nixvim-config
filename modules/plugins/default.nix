@@ -1,6 +1,7 @@
 {
   imports = [
     ./snacks.nix
+    ./terminals.nix
     ./oil.nix
     ./tawny.nix
     ./lsp.nix
@@ -9,6 +10,7 @@
     ./flash.nix
     ./noice.nix
     ./treesitter.nix
+    ./treesj.nix
     ./lualine.nix
     ./bufferline.nix
     ./nvimacs.nix
