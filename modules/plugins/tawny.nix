@@ -12,7 +12,7 @@
   extraConfigLua = ''
     require("tawny").setup({
       bold = true,
-      variant = "dark",
+      variant = "light",
       transparent = true,
     })
 
