@@ -1,4 +1,8 @@
+{ pkgs, ... }:
+
 {
+  extraPackages = [ pkgs.prettier ];
+
   plugins.conform-nvim = {
     enable = true;
     autoInstall.enable = false;

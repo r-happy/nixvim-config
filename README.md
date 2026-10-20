@@ -1,12 +1,15 @@
 # nixvim-config
 
 Personal Neovim configuration. Nix language support is included for editing
-this repository and dotfiles. Other LSP servers and formatters are supplied by
-each project's dev shell; only servers found on PATH at startup are activated.
+this repository and dotfiles. Prettier is bundled so Markdown and other supported
+files can be formatted on save from any directory. Other LSP servers and
+formatters are supplied by each project's dev shell; only servers found on PATH
+at startup are activated.
 
 Start the editor from `nix develop` or a direnv-enabled shell. Restart Neovim
 when changing project environments. Frontend projects should install their
-locked dependencies so Conform can find their local Prettier executable.
+locked dependencies so Conform can prefer their local Prettier executable over
+the bundled version.
 VimTeX keeps its editor integration, but TeX Live and viewer tools must be
 provided by the document project's environment.
 
