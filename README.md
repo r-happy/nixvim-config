@@ -15,3 +15,9 @@ provided by the document project's environment.
 
 The companion dotfiles checkout consumes this repository through a local path
 input. Commit and share changes in both repositories independently.
+
+Diagnostics are marked in the sign column and underlined in the buffer.
+Use `]d` / `[d` to jump to the next / previous diagnostic and show its message.
+`Space d l` opens the current buffer's diagnostic list with line and column
+numbers; press Enter on an entry to jump there. `Space d d` shows the current
+line's diagnostic details.

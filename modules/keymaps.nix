@@ -9,6 +9,34 @@ in
   keymaps = [
     {
       mode = "n";
+      key = "]d";
+      action = raw "function() vim.diagnostic.jump({ count = 1, float = true }) end";
+      options.desc = "Next diagnostic";
+    }
+
+    {
+      mode = "n";
+      key = "[d";
+      action = raw "function() vim.diagnostic.jump({ count = -1, float = true }) end";
+      options.desc = "Previous diagnostic";
+    }
+
+    {
+      mode = "n";
+      key = "<leader>dl";
+      action = raw "function() vim.diagnostic.setloclist({ open = true }) end";
+      options.desc = "List buffer diagnostics";
+    }
+
+    {
+      mode = "n";
+      key = "<leader>dd";
+      action = raw "function() vim.diagnostic.open_float({ scope = 'line' }) end";
+      options.desc = "Show line diagnostics";
+    }
+
+    {
+      mode = "n";
       key = "<leader>e";
       action = "<cmd>Oil<cr>";
       options.desc = "Open Oil";

@@ -52,9 +52,12 @@
     end
   '';
 
+  # Keep locations visible even when the cursor is away from a diagnostic.
   # Tiny Inline Diagnostic owns inline messages; Bufferline keeps the counts.
   diagnostic.settings = {
-    signs = false;
+    signs = true;
+    underline = true;
+    severity_sort = true;
     virtual_text = false;
     virtual_lines = false;
   };
