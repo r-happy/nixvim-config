@@ -74,7 +74,7 @@
         };
 
         signature = {
-          enabled = false;
+          enabled = true;
         };
 
         sources = {
