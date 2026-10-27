@@ -15,6 +15,6 @@
       transparent = false,
     })
 
-    vim.cmd.colorscheme("tawny")
+    vim.cmd.colorscheme("tawny-light")
   '';
 }
