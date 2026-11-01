@@ -12,7 +12,7 @@
   extraConfigLua = ''
     require("tawny").setup({
       bold = true,
-      transparent = false,
+      transparent = true,
     })
 
     vim.cmd.colorscheme("tawny")
