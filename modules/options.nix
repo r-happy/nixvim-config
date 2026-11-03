@@ -13,7 +13,6 @@
     number = true;
     relativenumber = true;
     autoread = true;
-    wrap = true;
     mouse = "";
     wildmenu = true;
     foldmethod = "manual";
