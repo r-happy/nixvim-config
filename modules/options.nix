@@ -3,7 +3,7 @@
     cursorcolumn = true;
     cursorline = true;
     smarttab = true;
-    nowrap = true;
+    wrap = false;
     tabstop = 2;
     autoindent = true;
     smartindent = true;
