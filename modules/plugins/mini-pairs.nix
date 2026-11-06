@@ -1,5 +1,5 @@
 {
-  plugins.autoclose = {
+  plugins.mini-pairs = {
     enable = true;
   };
 }

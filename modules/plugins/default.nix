@@ -14,7 +14,7 @@
     ./lualine.nix
     ./bufferline.nix
     ./nvimacs.nix
-    ./autoclose.nix
+    ./mini-pairs.nix
     ./markview.nix
     ./gitsign.nix
     ./ts-autotag.nix

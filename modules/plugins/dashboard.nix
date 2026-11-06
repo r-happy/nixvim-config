@@ -2,75 +2,64 @@
   plugins = {
     web-devicons.enable = true;
 
-    dashboard = {
-      enable = true;
+    snacks.settings.dashboard = {
+      enabled = true;
 
-      settings = {
-        theme = "doom";
+      preset.keys = [
+        {
+          icon = " ";
+          desc = "Find file";
+          key = "f";
+          action = ":lua Snacks.picker.files()";
+        }
+        {
+          icon = " ";
+          desc = "Recent files";
+          key = "r";
+          action = ":lua Snacks.picker.recent()";
+        }
+        {
+          icon = " ";
+          desc = "Grep files";
+          key = "g";
+          action = ":lua Snacks.picker.grep()";
+        }
+        {
+          icon = " ";
+          desc = "Explorer";
+          key = "e";
+          action = ":lua Snacks.picker.explorer()";
+        }
+        {
+          icon = " ";
+          desc = "Config";
+          key = "c";
+          action = ":edit ~/github/nixvim-config/modules/plugins/dashboard.nix";
+        }
+        {
+          icon = " ";
+          desc = "Quit";
+          key = "q";
+          action = ":qa";
+        }
+      ];
 
-        config = {
-          header = [
-            "         __                           "
-            "   _____/ /_  ____ _____  ____  __  __"
-            "  / ___/ __ \\/ __ `/ __ \\/ __ \\/ / / /"
-            " / /  / / / / /_/ / /_/ / /_/ / /_/ / "
-            "/_/  /_/ /_/\\__,_/ .___/ .___/\\__, /  "
-            "                /_/   /_/    /____/   "
-            ""
-            ""
-            ""
-          ];
-
-          center = [
-            {
-              icon = "  ";
-              desc = "Find file";
-              key = "f";
-              key_format = " %s";
-              action = "lua Snacks.picker.files()";
-            }
-            {
-              icon = "  ";
-              desc = "Recent files";
-              key = "r";
-              key_format = " %s";
-              action = "lua Snacks.picker.recent()";
-            }
-            {
-              icon = "  ";
-              desc = "Grep files";
-              key = "g";
-              key_format = " %s";
-              action = "lua Snacks.picker.grep()";
-            }
-            {
-              icon = "  ";
-              desc = "Explorer";
-              key = "e";
-              key_format = " %s";
-              action = "lua Snacks.picker.explorer()";
-            }
-            {
-              icon = "  ";
-              desc = "Config";
-              key = "c";
-              key_format = " %s";
-              action = "edit ~/github/nixvim-config/modules/plugins/dashboard.nix";
-            }
-            {
-              icon = "  ";
-              desc = "Quit";
-              key = "q";
-              key_format = " %s";
-              action = "qa";
-            }
-          ];
-
-          footer = [ "" ];
-
-          vertical_center = true;
-        };
-      };
+      sections = [
+        # Pre-rendered from a photo: 60x52 pixels drawn as truecolor half blocks.
+        {
+          section = "terminal";
+          cmd = "cat ${./dashboard-dog.ansi}";
+          width = 60;
+          height = 26;
+          padding = 2;
+          # Leave room for the keys on short terminals.
+          enabled.__raw = "function() return vim.o.lines >= 41 end";
+        }
+        {
+          section = "keys";
+          gap = 1;
+        }
+      ];
     };
   };
 }
