@@ -24,5 +24,6 @@
     ./conform-nvim.nix
     ./tiny-inline-diagnostic.nix
     ./windows.nix
+    ./codediff.nix
   ];
 }
