@@ -31,12 +31,6 @@
           action = ":lua Snacks.picker.explorer()";
         }
         {
-          icon = " ";
-          desc = "Config";
-          key = "c";
-          action = ":edit ~/github/nixvim-config/modules/plugins/dashboard.nix";
-        }
-        {
           icon = " ";
           desc = "Quit";
           key = "q";

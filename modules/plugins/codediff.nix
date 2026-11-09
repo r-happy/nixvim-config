@@ -1,6 +1,9 @@
 {
   plugins.codediff = {
     enable = true;
+    settings = {
+      explorer.auto_open_on_cursor = true;
+    };
   };
 
   # The plugin dir lives in the read-only /nix/store, so the watcher binary
