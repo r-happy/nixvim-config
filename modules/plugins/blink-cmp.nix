@@ -137,6 +137,9 @@ in
             };
 
             snippets = {
+              # Rank snippets below LSP items even when their case matches
+              # exactly (errors.new: `new~` snippet vs errors.New).
+              score_offset = -15;
               should_show_items = hideInProse;
               opts = {
                 extended_filetypes = {
@@ -151,11 +154,6 @@ in
           implementation = "prefer_rust_with_warning";
           # The default allows typos, which matches unrelated words.
           max_typos = 0;
-          sorts = [
-            "exact"
-            "score"
-            "sort_text"
-          ];
         };
       };
     };
